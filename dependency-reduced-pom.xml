@@ -42,7 +42,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>org.but.feec.javafx.Main</mainClass>
+                  <mainClass>org.but.feec.cinema.Main</mainClass>
                 </transformer>
               </transformers>
             </configuration>
