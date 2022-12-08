@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="setup done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonAuthView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonBasicView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonCreateView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonDetailView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonEditView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/DataAccessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/ExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/App.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/modena.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/myStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo-eng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cinema-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" afterDir="false" />
-    </list>
+    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="setup done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670347508106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="setup done">
+      <created>1670491210751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670491210751</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +129,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
