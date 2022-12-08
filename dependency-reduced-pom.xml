@@ -42,7 +42,9 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>org.but.feec.cinema.Main</mainClass>
+                  <manifestEntries>
+                    <mainClass>org.but.feec.cinema.Main</mainClass>
+                  </manifestEntries>
                 </transformer>
               </transformers>
             </configuration>

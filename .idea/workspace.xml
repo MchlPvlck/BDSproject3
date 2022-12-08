@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="setup done" />
+    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="setup done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonAuthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonBasicView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonCreateView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonDetailView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonEditView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/DataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/ExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/App.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/modena.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/myStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo-eng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cinema-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +51,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files/Maven/apache-maven-3.8.6" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="#JAVA_HOME" />
@@ -40,18 +72,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/prog/IntelliJ/cinema/src/main/resources/org/but/feec/cinema/logos",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\prog\IntelliJ\cinema\src\main\resources\org\but\feec\cinema\logos" />
+      <recent name="D:\prog\IntelliJ\cinema\src\main\resources\org\but\feec\cinema\css" />
+      <recent name="D:\prog\IntelliJ\cinema\src\main\resources\org\but\feec\cinema" />
+      <recent name="D:\prog\IntelliJ\cinema\src\main\java\org\but\feec\cinema\exceptions" />
+      <recent name="D:\prog\IntelliJ\cinema\src\main\java\org\but\feec\cinema\api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.but.feec.cinema.services" />
+      <recent name="org.but.feec.cinema.data" />
+      <recent name="org.but.feec.cinema.controllers" />
+      <recent name="org.but.feec.cinema" />
+      <recent name="org.but.feec.cinema.config" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\mpavl\AppData\Roaming\Subversion</configuration>
@@ -85,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670347364891</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="setup done">
+      <created>1670347508106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670347508106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
