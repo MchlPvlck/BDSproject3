@@ -1,4 +1,4 @@
-package org.but.feec.cinema.controllers;
+package org.but.feec.cinema.controller;
 
 import de.jensd.fx.glyphs.GlyphsDude;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
@@ -37,14 +37,13 @@ public class LoginController {
     public Label usernameLabel;
     @FXML
     public Label passwordLabel;
+
     @FXML
-    public Label vutLogo;
+    private Button loginBtn;
     @FXML
-    private Button signInButton;
+    private TextField usernameTxtField;
     @FXML
-    private TextField usernameTextField;
-    @FXML
-    private PasswordField passwordTextField;
+    private PasswordField passwordTxtField;
 
     private PersonRepository personRepository;
     private AuthService authService;
@@ -56,21 +55,21 @@ public class LoginController {
 
     @FXML
     private void initialize() {
-        GlyphsDude.setIcon(signInButton, FontAwesomeIcon.SIGN_IN, "1em");
+        GlyphsDude.setIcon(loginBtn, FontAwesomeIcon.SIGN_IN, "1em");
         GlyphsDude.setIcon(usernameLabel, FontAwesomeIcon.USER, "2em");
         GlyphsDude.setIcon(passwordLabel, FontAwesomeIcon.USER_SECRET, "2em");
-        usernameTextField.setOnKeyPressed(event -> {
+        usernameTxtField.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
                 handleSignIn();
             }
         });
-        passwordTextField.setOnKeyPressed(event -> {
+        passwordTxtField.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
                 handleSignIn();
             }
         });
 
-        initializeLogos();
+       // initializeLogos();
         initializeServices();
         initializeValidations();
 
@@ -79,9 +78,9 @@ public class LoginController {
 
     private void initializeValidations() {
         validation = new ValidationSupport();
-        validation.registerValidator(usernameTextField, Validator.createEmptyValidator("The username must not be empty."));
-        validation.registerValidator(passwordTextField, Validator.createEmptyValidator("The password must not be empty."));
-        signInButton.disableProperty().bind(validation.invalidProperty());
+        validation.registerValidator(usernameTxtField, Validator.createEmptyValidator("The username must not be empty."));
+        validation.registerValidator(passwordTxtField, Validator.createEmptyValidator("The password must not be empty."));
+        loginBtn.disableProperty().bind(validation.invalidProperty());
     }
 
     private void initializeServices() {
@@ -89,32 +88,32 @@ public class LoginController {
         authService = new AuthService(personRepository);
     }
 
-    private void initializeLogos() {
+    /*private void initializeLogos() {
         Image vutImage = new Image(App.class.getResourceAsStream("logos/vut-logo-eng.png"));
         ImageView vutLogoImage = new ImageView(vutImage);
         vutLogoImage.setFitHeight(85);
         vutLogoImage.setFitWidth(150);
         vutLogoImage.setPreserveRatio(true);
         vutLogo.setGraphic(vutLogoImage);
-    }
+    }*/
 
     public void signInActionHandler(ActionEvent event) {
         handleSignIn();
     }
 
     private void handleSignIn() {
-        String username = usernameTextField.getText();
-        String password = passwordTextField.getText();
+        String username = usernameTxtField.getText();
+        String password = passwordTxtField.getText();
 
         try {
             boolean authenticated = authService.authenticate(username, password);
             if (authenticated) {
                 showPersonsView();
             } else {
-                showInvalidPaswordDialog();
+                showInvalidPasswordDialog();
             }
         } catch (ResourceNotFoundException | DataAccessException e) {
-            showInvalidPaswordDialog();
+            showInvalidPasswordDialog();
         }
     }
 
@@ -124,10 +123,10 @@ public class LoginController {
             fxmlLoader.setLocation(App.class.getResource("fxml/Persons.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 1050, 600);
             Stage stage = new Stage();
-            stage.setTitle("BDS JavaFX Demo App");
+            stage.setTitle("BDS cinema");
             stage.setScene(scene);
 
-            Stage stageOld = (Stage) signInButton.getScene().getWindow();
+            Stage stageOld = (Stage) loginBtn.getScene().getWindow();
             stageOld.close();
 
             stage.getIcons().add(new Image(App.class.getResourceAsStream("logos/vut.jpg")));
@@ -139,11 +138,11 @@ public class LoginController {
         }
     }
 
-    private void showInvalidPaswordDialog() {
+    private void showInvalidPasswordDialog() {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Unauthenticated");
         alert.setHeaderText("The user is not authenticated");
-        alert.setContentText("Please provide a valid username and password");//ww  w . j  a  va2s  .  co  m
+        alert.setContentText("Please provide a valid username and password");//www.java2s.com
 
         alert.showAndWait();
     }

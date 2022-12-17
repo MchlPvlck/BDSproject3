@@ -1,5 +1,4 @@
 package org.but.feec.cinema;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,9 +7,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.but.feec.cinema.exceptions.ExceptionHandler;
 
-/**
- * @author Pavel Šeda
- */
 public class App extends Application {
 
     private FXMLLoader loader;
@@ -26,7 +22,7 @@ public class App extends Application {
             loader = new FXMLLoader(getClass().getResource("App.fxml"));
             mainStage = loader.load();
 
-            primaryStage.setTitle("BDS JavaFX Demo");
+            primaryStage.setTitle("BDS cinema");
             Scene scene = new Scene(mainStage);
             setUserAgentStylesheet(STYLESHEET_MODENA);
             String myStyle = getClass().getResource("css/myStyle.css").toExternalForm();

@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="setup done" />
+    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="demo">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/exceptions/ExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/App.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/App.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/myStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cinema-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +70,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,6 +88,17 @@
       <recent name="org.but.feec.cinema" />
       <recent name="org.but.feec.cinema.config" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cinema-1.0.0.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/cinema-1.0.0.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.cinema-1.0.0.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -121,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670491210751</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="demo">
+      <created>1670491550590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670491550590</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +184,7 @@
     <MESSAGE value="innitial commit, just getting started" />
     <MESSAGE value="innitial commit" />
     <MESSAGE value="setup done" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup done" />
+    <MESSAGE value="demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo" />
   </component>
 </project>
