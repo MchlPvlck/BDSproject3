@@ -13,12 +13,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.but.feec.cinema.App;
 import org.but.feec.cinema.api.dummy.DummyBasicView;
-import org.but.feec.cinema.api.person.PersonBasicView;
 import org.but.feec.cinema.data.DummyRepository;
 import org.but.feec.cinema.exceptions.ExceptionHandler;
 import org.but.feec.cinema.services.DummyService;
@@ -53,7 +51,6 @@ public class DummyController {
 
     private DummyService dummyService;
     private DummyRepository dummyRepository;
-    private ValidationSupport validation;
 
     @FXML
     private void initialize() {
@@ -67,8 +64,6 @@ public class DummyController {
 
         dummyTable.getSortOrder().add(stringValue);
 
-        //loadIcons();
-
         logger.info("DummyController initialized");
     }
 
@@ -76,15 +71,6 @@ public class DummyController {
         List<DummyBasicView> dummy = dummyService.getDummyBasicView();
         return FXCollections.observableArrayList(dummy);
     }
-
-
-
-   /* private void loadIcons() {
-        Image vutLogoImage = new Image(App.class.getResourceAsStream("logo/vut-logo-eng.png"));
-        ImageView vutLogo = new ImageView(vutLogoImage);
-        vutLogo.setFitWidth(150);
-        vutLogo.setFitHeight(50);
-    }*/
 
     public void handleExitMenuItem(ActionEvent event) {
         System.exit(0);

@@ -1,6 +1,5 @@
 package org.but.feec.cinema.data;
 
-import org.but.feec.cinema.api.dummy.DummyBasicView;
 import org.but.feec.cinema.api.projection.*;
 import org.but.feec.cinema.config.DataSourceConfig;
 import org.but.feec.cinema.exceptions.DataAccessException;
@@ -32,7 +31,7 @@ public class ProjectionRepository {
                 }
             }
         } catch (SQLException e) {
-            throw new DataAccessException("Find projection by id failed.", e);
+            throw new DataAccessException("Find reservation by id failed.", e);
         }
         return null;
     }
@@ -69,10 +68,10 @@ public class ProjectionRepository {
             int affectedRows = preparedStatement.executeUpdate();
 
             if (affectedRows == 0) {
-                throw new DataAccessException("Creating projection failed, no rows affected.");
+                throw new DataAccessException("Creating reservation failed, no rows affected.");
             }
         } catch (SQLException e) {
-            throw new DataAccessException("Creating projection operation failed.");
+            throw new DataAccessException("Creating reservation operation failed.");
         }
     }
 
@@ -90,13 +89,13 @@ public class ProjectionRepository {
                     ps.setLong(1, projectionDeleteView.getId());
                     ps.execute();
                 } catch (SQLException e) {
-                    throw new DataAccessException("This projection to delete doesn't exists.");
+                    throw new DataAccessException("This reservation to delete doesn't exists.");
                 }
 
                 int affectedRows = preparedStatement.executeUpdate();
 
                 if (affectedRows == 0) {
-                    throw new DataAccessException("Deleting projection failed, no rows affected.");
+                    throw new DataAccessException("Deleting reservation failed, no rows affected.");
                 }
                 connection.commit();
             } catch (SQLException e) {
@@ -105,7 +104,7 @@ public class ProjectionRepository {
                 connection.setAutoCommit(true);
             }
         } catch (SQLException e) {
-            throw new DataAccessException("Deleting projection operation failed.");
+            throw new DataAccessException("Deleting reservation operation failed.");
         }
     }
 
@@ -127,13 +126,13 @@ public class ProjectionRepository {
                     ps.setLong(1, projectionEditView.getId());
                     ps.execute();
                 } catch (SQLException e) {
-                    throw new DataAccessException("This projection for edit do not exists.");
+                    throw new DataAccessException("This reservation to edit do not exists.");
                 }
 
                 int affectedRows = preparedStatement.executeUpdate();
 
                 if (affectedRows == 0) {
-                    throw new DataAccessException("Creating projection failed, no rows affected.");
+                    throw new DataAccessException("Creating reservation failed, no rows affected.");
                 }
                 connection.commit();
             } catch (SQLException e) {
@@ -142,7 +141,7 @@ public class ProjectionRepository {
                 connection.setAutoCommit(true);
             }
         } catch (SQLException e) {
-            throw new DataAccessException("Creating projection operation failed.");
+            throw new DataAccessException("Creating reservation operation failed.");
         }
     }
 
@@ -221,7 +220,7 @@ public class ProjectionRepository {
             return projectionBasicViews;
 
         } catch (SQLException e) {
-            throw new DataAccessException("Finding projection has failed: ", e);
+            throw new DataAccessException("Finding reservation has failed: ", e);
         }
     }
 

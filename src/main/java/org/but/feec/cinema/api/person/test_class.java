@@ -4,7 +4,7 @@ package org.but.feec.cinema.api.person;
 import de.mkammerer.argon2.Argon2;
 import de.mkammerer.argon2.Argon2Factory;
 
-public class test_class {
+public class test_class {   //class to generate argon input hash
 
 
     final private static Argon2 argon2 = Argon2Factory.create(

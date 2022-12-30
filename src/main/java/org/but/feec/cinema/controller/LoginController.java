@@ -1,7 +1,6 @@
 package org.but.feec.cinema.controller;
 
-import de.jensd.fx.glyphs.GlyphsDude;
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -11,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -26,7 +26,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.Objects;
 import java.util.Optional;
 
 public class LoginController {
@@ -55,9 +54,6 @@ public class LoginController {
 
     @FXML
     private void initialize() {
-        GlyphsDude.setIcon(loginBtn, FontAwesomeIcon.SIGN_IN, "1em");
-        GlyphsDude.setIcon(usernameLabel, FontAwesomeIcon.USER, "2em");
-        GlyphsDude.setIcon(passwordLabel, FontAwesomeIcon.USER_SECRET, "2em");
         usernameTxtField.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
                 handleSignIn();
@@ -69,7 +65,7 @@ public class LoginController {
             }
         });
 
-       // initializeLogos();
+        initializeLogos();
         initializeServices();
         initializeValidations();
 
@@ -88,14 +84,13 @@ public class LoginController {
         authService = new AuthService(personRepository);
     }
 
-    /*private void initializeLogos() {
-        Image vutImage = new Image(App.class.getResourceAsStream("logos/vut-logo-eng.png"));
+    private void initializeLogos() {
+        Image vutImage = new Image(App.class.getResourceAsStream("logos/loginLogo.jpg"));
         ImageView vutLogoImage = new ImageView(vutImage);
         vutLogoImage.setFitHeight(85);
         vutLogoImage.setFitWidth(150);
-        vutLogoImage.setPreserveRatio(true);
-        vutLogo.setGraphic(vutLogoImage);
-    }*/
+
+    }
 
     public void signInActionHandler(ActionEvent event) {
         handleSignIn();
@@ -129,7 +124,7 @@ public class LoginController {
             Stage stageOld = (Stage) loginBtn.getScene().getWindow();
             stageOld.close();
 
-            stage.getIcons().add(new Image(App.class.getResourceAsStream("logos/vut.jpg")));
+            stage.getIcons().add(new Image(App.class.getResourceAsStream("logos/projectionLogo.jpg")));
             authConfirmDialog();
 
             stage.show();

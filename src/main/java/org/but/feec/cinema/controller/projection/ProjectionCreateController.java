@@ -82,8 +82,8 @@ public class ProjectionCreateController {
 
     private void projectionCreatedConfirmationDialog() {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("Projection creation confirmed");
-        alert.setHeaderText("Your projection was successfully created.");
+        alert.setTitle("Reservation creation confirmed");
+        alert.setHeaderText("Your reservation was successfully created.");
 
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override

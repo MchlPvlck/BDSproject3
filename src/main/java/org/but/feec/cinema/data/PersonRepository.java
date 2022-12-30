@@ -29,7 +29,7 @@ public class PersonRepository {
                 }
             }
         } catch (SQLException e) {
-            throw new DataAccessException("Find person by ID with addresses failed.", e);
+            throw new DataAccessException("Find person by username failed.", e);
         }
         return null;
     }

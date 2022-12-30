@@ -109,8 +109,8 @@ public class ProjectionEditController {
 
     private void projectionEditedConfirmationDialog() {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("Projection Edited - Confirmation");
-        alert.setHeaderText("Projection was successfully edited.");
+        alert.setTitle("Reservation edit confirmation");
+        alert.setHeaderText("Reservation was successfully edited.");
 
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override

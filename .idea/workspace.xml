@@ -4,52 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="first work day, setting up logging">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logFile.2022-12-20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logFile.2022-12-21.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logFile.2022-12-27.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/dummy/DummyBasicView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/test_class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/projection/ProjectionBasicView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/projection/ProjectionCreateView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/projection/ProjectionDeleteView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/projection/ProjectionDetailView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/projection/ProjectionEditView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/dummy/DummyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/person/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionCreateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionDetailViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionEditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/DummyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/ProjectionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/DummyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/ProjectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/DummyTable.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Persons.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Projection.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/ProjectionCreate.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/ProjectionDetailView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/ProjectionEdit.fxml" afterDir="false" />
+    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="last day, one of final pushes">
+      <change afterPath="$PROJECT_DIR$/Cinema.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autobc/postgres-backup-30.12.2022-19_13_27,71.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/loginLogo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/projectionLogo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonAuthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/PersonAuthView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonBasicView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/PersonBasicView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonCreateView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonDetailView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/PersonEditView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/test_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/test_class.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/dummy/DummyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/dummy/DummyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/person/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/person/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionCreateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionDeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionEditController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/services/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/modena.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/css/modena.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/ProjectionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/ProjectionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/DummyTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/DummyTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Persons.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Persons.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Projection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Projection.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo-eng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cinema-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" afterDir="false" />
     </list>
@@ -196,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671309282775</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="last day, one of final pushes">
+      <created>1672396044620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672396044620</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,18 +215,10 @@
     <MESSAGE value="setup done" />
     <MESSAGE value="demo" />
     <MESSAGE value="first work day, setting up logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="first work day, setting up logging" />
+    <MESSAGE value="last day, one of final pushes" />
+    <option name="LAST_COMMIT_MESSAGE" value="last day, one of final pushes" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/dummy/DummyController.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.lang.Long" memberName="value" />

@@ -27,7 +27,7 @@
                               <TableColumn fx:id="userName" prefWidth="118.0" text="User name" />
                           </columns>
                         </TableView>
-                        <Button fx:id="projectionBtn" layoutX="68.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleProjectionButton" prefHeight="46.0" prefWidth="124.0" text="Projections table" />
+                        <Button fx:id="projectionBtn" layoutX="68.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleProjectionButton" prefHeight="46.0" prefWidth="124.0" text="Reservations table" />
                         <Button fx:id="dummyBtn" layoutX="68.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleDummyButton" prefHeight="46.0" prefWidth="124.0" text="Dummy table" />
                      </children>
                   </AnchorPane>

@@ -38,8 +38,8 @@ public class ProjectionDeleteController {
 
     private void projectionDeletedConfirmationDialog() {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("User Deleted Confirmation");
-        alert.setHeaderText("Your user was successfully deleted.");
+        alert.setTitle("Reservation deletion confirmation");
+        alert.setHeaderText("Your reservation was successfully deleted.");
 
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override

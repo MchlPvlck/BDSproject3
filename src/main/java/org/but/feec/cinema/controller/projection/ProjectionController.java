@@ -89,7 +89,6 @@ public class ProjectionController {
 
         initializeTableViewSelection();
         initializeChoiceBox();
-        loadIcons();
 
         logger.info("ProjectionsController initialized");
     }
@@ -99,9 +98,9 @@ public class ProjectionController {
     }
 
     private void initializeTableViewSelection() {
-        MenuItem edit = new MenuItem("Edit projection");
-        MenuItem delete = new MenuItem("Delete projection");
-        MenuItem detailedView = new MenuItem("Detailed projection view");
+        MenuItem edit = new MenuItem("Edit reservation");
+        MenuItem delete = new MenuItem("Delete reservation");
+        MenuItem detailedView = new MenuItem("Detailed reservation view");
         edit.setOnAction((ActionEvent event) -> {
             ProjectionBasicView projectionView = projectionTableView.getSelectionModel().getSelectedItem();
             try {
@@ -109,7 +108,7 @@ public class ProjectionController {
                 fxmlLoader.setLocation(App.class.getResource("fxml/ProjectionEdit.fxml"));
                 Stage stage = new Stage();
                 stage.setUserData(projectionView);
-                stage.setTitle("Cinema edit projection");
+                stage.setTitle("Cinema edit reservation");
 
                 ProjectionEditController controller = new ProjectionEditController();
                 controller.setStage(stage);
@@ -155,7 +154,7 @@ public class ProjectionController {
                 ProjectionDetailView projectionDetailView = projectionService.getProjectionDetailView(projectionId);
 
                 stage.setUserData(projectionDetailView);
-                stage.setTitle("Cinema projections detail view");
+                stage.setTitle("Cinema reservation detail view");
 
                 ProjectionDetailViewController controller = new ProjectionDetailViewController();
                 controller.setStage(stage);
@@ -189,12 +188,7 @@ public class ProjectionController {
         return FXCollections.observableArrayList(projections);
     }
 
-    private void loadIcons() {
-        Image vutLogoImage = new Image(App.class.getResourceAsStream("logos/vut-logo-eng.png"));
-        ImageView vutLogo = new ImageView(vutLogoImage);
-        vutLogo.setFitWidth(150);
-        vutLogo.setFitHeight(50);
-    }
+
 
     public void handleExitMenuItem(ActionEvent event) {
         System.exit(0);
@@ -206,7 +200,7 @@ public class ProjectionController {
             fxmlLoader.setLocation(App.class.getResource("fxml/ProjectionCreate.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 500);
             Stage stage = new Stage();
-            stage.setTitle("Cinema create projection");
+            stage.setTitle("Cinema create reservation");
             stage.setScene(scene);
 
             stage.show();

@@ -12,26 +12,26 @@
                <content>
                   <AnchorPane prefHeight="598.0" prefWidth="998.0">
                      <children>
-                        <Label layoutX="69.0" layoutY="77.0" text="Projections">
+                        <Label layoutX="69.0" layoutY="77.0" text="Reservations">
                            <font>
                               <Font size="25.0" />
                            </font></Label>
                         <Button fx:id="userBtn" layoutX="46.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleUsersButton" prefHeight="46.0" prefWidth="124.0" text="User table" />
-                        <TextField fx:id="findTxtField" layoutX="40.0" layoutY="170.0" prefHeight="26.0" prefWidth="363.0" promptText="Enter value to find" />
+                        <TextField fx:id="findTxtField" layoutX="40.0" layoutY="170.0" prefHeight="26.0" prefWidth="337.0" promptText="Enter value to find" />
                         <ChoiceBox fx:id="choiceBox" layoutX="40.0" layoutY="208.0" prefWidth="150.0" />
                         <Button fx:id="findBtn" layoutX="196.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleFindButton" text="Find" />
-                        <TableView fx:id="projectionTableView" layoutX="410.0" layoutY="13.0" prefHeight="571.0" prefWidth="573.0">
+                        <TableView fx:id="projectionTableView" layoutX="394.0" layoutY="12.0" prefHeight="572.0" prefWidth="591.0">
                           <columns>
                               <TableColumn fx:id="reservationId" prefWidth="29.0" text="ID" />
                             <TableColumn fx:id="projectionGivenName" prefWidth="89.0" text="Given name" />
                             <TableColumn fx:id="projectionFamilyName" prefWidth="98.0" text="Family name" />
-                              <TableColumn fx:id="projectionMovieName" prefWidth="154.0" text="Movie name" />
-                              <TableColumn fx:id="projectionStart" prefWidth="226.0" text="Projection start" />
+                              <TableColumn fx:id="projectionMovieName" prefWidth="161.0" text="Movie name" />
+                              <TableColumn fx:id="projectionStart" prefWidth="219.0" text="Projection start" />
                           </columns>
                         </TableView>
                         <Button fx:id="refreshBtn" layoutX="239.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleRefreshButton" prefHeight="46.0" prefWidth="124.0" text="Refresh" />
                         <Button fx:id="dummyBtn" layoutX="46.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleDummyButton" prefHeight="46.0" prefWidth="124.0" text="Dummy table" />
-                        <Button fx:id="addProjectionBtn" layoutX="239.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleAddProjectionButton" prefHeight="46.0" prefWidth="124.0" text="Add projection" />
+                        <Button fx:id="addProjectionBtn" layoutX="239.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleAddProjectionButton" prefHeight="46.0" prefWidth="124.0" text="Add reservation" />
                      </children>
                   </AnchorPane>
                </content>

@@ -10,8 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.but.feec.cinema.App;
 import org.but.feec.cinema.api.person.PersonBasicView;
@@ -70,14 +68,10 @@ public class PersonController {
         userPhoneNumber.setCellValueFactory(new PropertyValueFactory<PersonBasicView, String>("phoneNumber"));
         userName.setCellValueFactory(new PropertyValueFactory<PersonBasicView, String>("username"));
 
-
         ObservableList<PersonBasicView> observablePersonsList = initializePersonsData();
         userTableView.setItems(observablePersonsList);
 
         userTableView.getSortOrder().add(userId);
-
-
-        loadIcons();
 
         logger.info("PersonsController initialized");
     }
@@ -89,13 +83,6 @@ public class PersonController {
         return FXCollections.observableArrayList(persons);
     }
 
-
-   private void loadIcons() {
-        Image vutLogoImage = new Image(App.class.getResourceAsStream("logos/vut-logo-eng.png"));
-        ImageView vutLogo = new ImageView(vutLogoImage);
-        vutLogo.setFitWidth(150);
-        vutLogo.setFitHeight(50);
-    }
 
     public void handleDummyButton(ActionEvent actionEvent) throws IOException {
 
@@ -113,7 +100,7 @@ public class PersonController {
         Parent tableViewParent = FXMLLoader.load(App.class.getResource("fxml/Projection.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
-        Stage window = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();;
 
         window.setScene(tableViewScene);
         window.show();
