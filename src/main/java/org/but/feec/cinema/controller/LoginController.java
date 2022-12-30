@@ -11,7 +11,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -27,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Optional;
 
 public class LoginController {
@@ -121,7 +121,7 @@ public class LoginController {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(App.class.getResource("fxml/Persons.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 1050, 600);
+            Scene scene = new Scene(fxmlLoader.load(), 1200, 700);
             Stage stage = new Stage();
             stage.setTitle("BDS cinema");
             stage.setScene(scene);
@@ -133,8 +133,8 @@ public class LoginController {
             authConfirmDialog();
 
             stage.show();
-        } catch (IOException ex) {
-            ExceptionHandler.handleException(ex);
+        } catch (IOException e) {
+            ExceptionHandler.handleException(e);
         }
     }
 

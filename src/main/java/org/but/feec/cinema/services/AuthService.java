@@ -1,7 +1,9 @@
 package org.but.feec.cinema.services;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
-import org.but.feec.cinema.api.PersonAuthView;
+
+import de.mkammerer.argon2.Argon2;
+import de.mkammerer.argon2.Argon2Factory;
+import org.but.feec.cinema.api.person.PersonAuthView;
 import org.but.feec.cinema.data.PersonRepository;
 import org.but.feec.cinema.exceptions.ResourceNotFoundException;
 
@@ -14,8 +16,8 @@ public class AuthService {
         this.personRepository = personRepository;
     }
 
-    private PersonAuthView findPersonByEmail(String email) {
-        return personRepository.findPersonByEmail(email);
+    private PersonAuthView findPersonByUsername(String username) {
+        return personRepository.findPersonByUsername(username);
     }
 
     public boolean authenticate(String username, String password) {
@@ -23,14 +25,15 @@ public class AuthService {
             return false;
         }
 
-        PersonAuthView personAuthView = findPersonByEmail(username);
+        PersonAuthView personAuthView = findPersonByUsername(username);
         if (personAuthView == null) {
             throw new ResourceNotFoundException("Provided username is not found.");
         }
-
-        BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), personAuthView.getPassword());
-        return result.verified;
+        return argon2.verify(personAuthView.getPassword(),password.toCharArray());
     }
 
+    final private static Argon2 argon2 = Argon2Factory.create(
+            Argon2Factory.Argon2Types.ARGON2id,16,64
+    );
 
 }

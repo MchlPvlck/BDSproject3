@@ -21,12 +21,7 @@ public class DataSourceConfig {
     private static HikariConfig config = new HikariConfig();
     private static HikariDataSource ds;
 
-    private DataSourceConfig() {
-    }
 
-    public static DataSource getDataSource() {
-        return ds;
-    }
 
     public static synchronized void initializeDataSource(String appProperties) {
         if (appProperties == null) {
@@ -59,5 +54,12 @@ public class DataSourceConfig {
 
     public static Connection getConnection() throws SQLException {
         return ds.getConnection();
+    }
+
+    private DataSourceConfig() {
+    }
+
+    public static DataSource getDataSource() {
+        return ds;
     }
 }

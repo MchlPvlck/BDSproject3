@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.but.feec.cinema.controller.person.PersonController">
+   <children>
+      <SplitPane prefHeight="601.0" prefWidth="1000.0">
+         <items>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="597.0" prefWidth="996.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="80.0" layoutY="50.0" prefHeight="43.0" prefWidth="93.0" text="Users">
+                           <font>
+                              <Font name="Arial" size="25.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="userTableView" layoutX="276.0" layoutY="14.0" prefHeight="570.0" prefWidth="708.0">
+                          <columns>
+                            <TableColumn fx:id="userId" prefWidth="59.0" text="ID" />
+                            <TableColumn fx:id="userGivenName" prefWidth="111.0" text="Given name" />
+                              <TableColumn fx:id="userFamilyName" prefWidth="125.0" text="Family name" />
+                              <TableColumn fx:id="userEmail" prefWidth="160.0" text="Email" />
+                              <TableColumn fx:id="userPhoneNumber" prefWidth="132.0" text="Phone number" />
+                              <TableColumn fx:id="userName" prefWidth="118.0" text="User name" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="projectionBtn" layoutX="68.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleProjectionButton" prefHeight="46.0" prefWidth="124.0" text="Projections table" />
+                        <Button fx:id="dummyBtn" layoutX="68.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleDummyButton" prefHeight="46.0" prefWidth="124.0" text="Dummy table" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>
