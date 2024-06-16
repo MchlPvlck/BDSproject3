@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="last day, one of final pushes">
-      <change afterPath="$PROJECT_DIR$/Cinema.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autobc/postgres-backup-30.12.2022-19_13_27,71.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/loginLogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/projectionLogo.jpg" afterDir="false" />
+    <list default="true" id="156b4080-e2e6-4bcc-9264-d82e517dfc37" name="Changes" comment="final push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/test_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/api/person/test_class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/dummy/DummyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/dummy/DummyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/person/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/person/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionCreateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionDeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/controller/projection/ProjectionEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/ProjectionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/but/feec/cinema/data/ProjectionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/DummyTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/DummyTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Persons.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Persons.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Projection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/fxml/Projection.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo-eng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/but/feec/cinema/logos/vut.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cinema-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-cinema-1.0.0.jar" afterDir="false" />
@@ -89,7 +67,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;codetogether.settings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -182,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672396044620</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final push">
+      <created>1672427806626</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672427806626</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +201,8 @@
     <MESSAGE value="demo" />
     <MESSAGE value="first work day, setting up logging" />
     <MESSAGE value="last day, one of final pushes" />
-    <option name="LAST_COMMIT_MESSAGE" value="last day, one of final pushes" />
+    <MESSAGE value="final push" />
+    <option name="LAST_COMMIT_MESSAGE" value="final push" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
